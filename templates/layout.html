@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" href="css/style.css">
+	<title>melts</title>
+</head>
+<body>
+
+	<div class="navbar sb-slide">
+		<div class="page-header">
+			<img src="images/logo.png" height="24" alt="logo">
+		</div>
+		<div class="sb-toggle-right">
+			<div class="menu-bar"></div>
+			<div class="menu-bar"></div>
+			<div class="menu-bar"></div>
+		</div>
+	</div>
+
+	<div id="sb-site">
+		<div class="main-content">
+
+
+			<div class="grid">
+
+			{{{ yield }}}
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="sb-slidebar sb-right">
+		<div class="side-menu">
+			<ul>
+				<li>Add/Remove Units</li>
+				<li>Add/Remove Students</li>
+				<li>Add/Remove Lecturers</li>
+				<li>Download Student Data</li>
+			</ul>
+			<hr>
+			<ul>
+				<li>Account Settings</li>
+				<li>Logout</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!-- Slidebars -->
+	<script src="javascript/slidebars.js"></script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$.slidebars();
+			});
+		}) (jQuery);
+	</script>
+
+</body>
+</html>
