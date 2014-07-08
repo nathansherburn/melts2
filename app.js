@@ -51,6 +51,11 @@ app.get('/login', function (req, res) {
 	res.render('login')
 })
 
+app.get('/home', function (req, res) {
+	res.render('home')
+})
+
+
 // app.post('/home', function (req, res) {
 // 	// res.end('your username is ' + req.body.username + " and your password is " + req.body.password)
 // 	res.render('home', {username: req.body.username, password: req.body.password})

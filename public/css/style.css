@@ -28,6 +28,7 @@ body {
 	min-height: 100%;
 	position: relative;
 	background-color: #1a2a3b;
+	color: #1A2A3B;
 }
 
 h1 {
@@ -36,8 +37,16 @@ h1 {
 
 input {
 	box-sizing: border-box;
-	height: 2em;
+}
+
+input[type=text], input[type=password] {
+	height: 3em;
 	font-size: 1em;
+	width: 100%;
+	background-color: #fff;
+	border: 2px solid #ddd;
+	border-radius: 4px;
+	padding: 0.8em;
 }
 
 .sb-slidebar {
@@ -76,7 +85,7 @@ input {
 	z-index: 1000;
 	position: fixed;
 	width: 100%;
-	height: 50px;
+	height: 51px;
 	background-color: #f4f4f4;
 }
 
@@ -90,38 +99,98 @@ input {
 	min-height: 100%;
 	max-width: 960px;
 	margin: 50px auto 0;
-	padding: 20px;
 }
-
+	
 .button-1 {
-	background-color: #000000;
+	background-color: #21c28f;
 	color: #fff;
 	height: 50px;
 	line-height: 50px;
 	text-align: center;
-	border-radius: 2px;
+	border-radius: 4px;
+	width: 200px;	
+	cursor: pointer;
 }
 
-.button-1 {
+.button-1:hover {
+	background-color: #32cd9c;
+}
+
+.shaded {
+	background-color: #f4f4f4;
+	border-radius: 4px;
+}
+
+.shaded-floated {
+	background-color: #f4f4f4;
+	border-radius: 4px;
+	width: 100%;
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 40px;
+}
+
+
+.big-button {
+	float: left;
+	width: 200px;
+	height: 80px;
+	line-height: 78px;
+	margin: 40px 0px 40px 40px;
+	font-size: 1.3em;
+}
+
+.circle-button {
+	height: 80px;
+	width: 80px;
+	background-color: #21c28f;
+	border-radius: 80px;
+	float: left;
+	clear: left;
+	margin: 40px 0px 40px 40px;
+}
+
+.red {
 
 }
 
+.blue {
+
+}
+
+.green {
+
+}
+
+.yellow {
+
+}
+
+[.circle-button, .big-button]:first-of-type {
+	margin: 0px 10px 0px 0px;
+}
 
 /* define the grid */
 
 [class*='col-'] {
   float: left;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 0px 20px 0px 20px;
 }
 
-[class*='col-']:first-of-type {
+
+.grid {
+  padding-top: 40px;
+}
+
+
+/*[class*='col-']:first-of-type {
   padding-left: 0;
 }
 
 [class*='col-']:last-of-type {
   padding-right: 0;
-}
+}*/
 
 .grid:after {
   content: "";
@@ -309,8 +378,6 @@ html.sb-static .sb-slidebar,
 
 	[class*='col-'] {
 		float: left;
-		padding-right: 0px;
-		padding-left: 0px;
 		width: 100%;
 	}
 
