@@ -41,9 +41,9 @@ app.get('/quiz', function (req, res) {
 	res.render('quiz', {
 		'question': 'hello',
 		'answer1': 'the goat',
-		'answer2': 'the goat',
-		'answer3': 'the goat',
-		'answer4': 'the goat'	
+		'answer2': 'the goat 2',
+		'answer3': 'the goat 34',
+		'answer4': 'the goa dfsd fsdf s f sfsfs f asdfs dfs fdgd f gt'	
 	})
 })
 

@@ -35,6 +35,13 @@ h1 {
 	font-weight: normal;
 }
 
+a {
+	text-decoration: none;
+}
+a:focus {
+	border: 0px;
+	outline: none;
+}
 input {
 	box-sizing: border-box;
 }
@@ -144,7 +151,6 @@ input[type=text], input[type=password] {
 .circle-button {
 	height: 80px;
 	width: 80px;
-	background-color: #21c28f;
 	border-radius: 80px;
 	float: left;
 	clear: left;
@@ -152,18 +158,21 @@ input[type=text], input[type=password] {
 }
 
 .red {
+	background-color: #ff7a7a;
 
 }
 
 .blue {
+	background-color: #47bcff;
 
 }
 
 .green {
-
+	background-color: #21c28f;
 }
 
 .yellow {
+	background-color: #ffd35c;
 
 }
 
